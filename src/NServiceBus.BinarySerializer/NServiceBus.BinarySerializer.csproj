@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <FileVersion>1.0.0-alpha</FileVersion>
+    <Version>$(FileVersion)</Version>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <TargetFrameworks>net452;netstandard2.0</TargetFrameworks>
+    <!--<GenerateDocumentationFile>true</GenerateDocumentationFile>-->
+    <PackageId>NServiceBus.BinarySerializer</PackageId>
+    <Authors>ramonsmits</Authors>
+    <Description>This is a copy of the binary serializer as embedded with NServiceBus prior to version 6.</Description>
+    <PackageVersion>$(Version)</PackageVersion>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageTags>NServiceBus, Binary, Serialization, Serializers</PackageTags>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/ramonsmits/NServiceBus.BinarySerializer/tree/1.0.0-alpha</PackageProjectUrl>
+    <!--<PackageOutputPath>..\nugets</PackageOutputPath>-->
+    <RepositoryUrl>https://github.com/ramonsmits/NServiceBus.BinarySerializer</RepositoryUrl>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <IncludeSource>True</IncludeSource>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\key.snk</AssemblyOriginatorKeyFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NServiceBus" Version="6.0.0" />
+     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\icon.png" Pack="true" PackagePath=""/>
+  </ItemGroup>
+</Project>
